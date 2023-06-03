@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Js_Task-7</title>
+
+    <script>
+      function add() {
+        var x = parseInt(document.getElementById("num1").value);
+        var y = parseInt(document.getElementById("num2").value);
+        var ans = x + y;
+        document.getElementById("answer").innerHTML =
+          "The Result is: <br>" + ans;
+      }
+      function subtract() {
+        var x = parseInt(document.getElementById("num1").value);
+        var y = parseInt(document.getElementById("num2").value);
+        var ans = x - y;
+        document.getElementById("answer").innerHTML =
+          "The Result is: <br>" + ans;
+      }
+      function multiply() {
+        var x = parseInt(document.getElementById("num1").value);
+        var y = parseInt(document.getElementById("num2").value);
+        var ans = x * y;
+        document.getElementById("answer").innerHTML =
+          "The Result is: <br>" + ans;
+      }
+      function divide() {
+        var x = parseInt(document.getElementById("num1").value);
+        var y = parseInt(document.getElementById("num2").value);
+        var ans = x / y;
+        document.getElementById("answer").innerHTML =
+          "The Result is: <br>" + ans;
+      }
+    </script>
+  </head>
+
+  <body>
+    <label for="num1">1st Number : </label>
+    <input type="text" name="num1" id="num1" />
+    <br /><br />
+    <label for="num2">2nd Number : </label>
+    <input type="text" name="num2" id="num2" />
+    <br /><br />
+    <input type="button" value="Add" onclick="add()" />
+    <input type="button" value="Subtract" onclick="subtract()" />
+    <input type="button" value="Multiply" onclick="multiply()" />
+    <input type="button" value="Divide" onclick="divide()" />
+
+    <p id="answer"></p>
+  </body>
+</html>
+<!--Coded by Sourav-->
